@@ -1,0 +1,12 @@
+
+.bg-moccasin{
+	background-color: Moccasin;
+}
+
+nav li a{
+	color: LightCyan !important;
+}
+
+nav li a:hover{
+	color: SteelBlue !important;
+}
