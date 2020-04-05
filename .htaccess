@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+RewriteRule ^(.+)$ index.php?sayfa=$1 [QSA]
+RewriteRule ^([0-9a-zA-Z-_]+)$ index.php?sayfa=$1 [QSA]
+# RewriteRule ^([0-9]+)-(.*)\html$ detay.php?id=$1&makale_adi=$2 [L, NC]
